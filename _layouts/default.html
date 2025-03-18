@@ -14,8 +14,7 @@
     {% include_cached masthead.html %}
 
     <div class="initial-content">
-      {{ content }}
-      {% include after-content.html %}
+      {{ content | markdownify }}  {% include after-content.html %}
     </div>
 
     {% if site.search == true %}
