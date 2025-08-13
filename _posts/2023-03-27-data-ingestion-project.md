@@ -2,6 +2,20 @@
 layout: post
 title: "Data Ingestion Project"
 category: data-engineering
+tools:
+  - name: "Python"
+    icon: "fab fa-python"
+  - name: "MySQL"
+    icon: "fas fa-database"
+  - name: "Docker"
+    icon: "fab fa-docker"
+  - name: "GCP"
+    icon: "fas fa-cloud"
+links:
+  - title: "Repository"
+    url: "https://github.com/0ladayo/data-ingestion"
+  - title: "Medium Post"
+    url: "https://medium.com/codex/data-ingestion-full-data-ingestion-78f0dad296e9"
 ---
 
 This project explores and implements several data ingestion techniques for migrating data from a MySQL relational database to a BigQuery data warehouse. The goal is to demonstrate how to handle different data synchronization scenarios, from simple full loads to more complex real-time updates.
@@ -15,12 +29,3 @@ The project is divided into three main parts:
 3.  **Change Data Capture (CDC):** This is the most advanced technique, capturing changes in the source database in real-time and streaming them to the destination. This allows for near real-time data synchronization between MySQL and BigQuery.
 
 The project includes Python scripts for each ingestion method, using libraries like Pandas for data manipulation and connectors for MySQL and BigQuery. The code is well-documented and serves as a practical guide for implementing robust data ingestion pipelines.
-
-[Repository](https://github.com/0ladayo/data-ingestion)
-[Medium Post](https://medium.com/codex/data-ingestion-full-data-ingestion-78f0dad296e9)
-
-Tools used:
-<i class="fab fa-python"></i>  Python,
-<i class="fas fa-database"></i>  MySQL,
-<i class="fab fa-docker"></i>  Docker,
-<i class="fas fa-cloud"></i>  GCP.

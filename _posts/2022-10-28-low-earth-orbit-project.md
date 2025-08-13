@@ -2,7 +2,18 @@
 layout: post
 title: "Low Earth Orbit Active Satellites Project"
 category: data-engineering
-
+tools:
+  - name: "Python"
+    icon: "fab fa-python"
+  - name: "GCP"
+    icon: "fas fa-cloud"
+links:
+  - title: "Repository"
+    url: "https://github.com/0ladayo/Low-Earth-Orbit-Satellites-Project"
+  - title: "Medium Post"
+    url: "https://medium.com/codex/building-a-web-application-for-active-low-earth-orbit-satellites-74fcafb16df"
+  - title: "Dashboard"
+    url: "https://leo-satellite-overview-project.nw.r.appspot.com/"
 ---
 
 This project involved building a web application to track active satellites in Low Earth Orbit (LEO). The application visualizes the real-time positions of satellites, providing an interactive dashboard for users.
@@ -15,11 +26,3 @@ The core of the project is a data pipeline built with Python and Google Cloud Pl
 The data pipeline is automated using Google Cloud services. A Google Cloud Function, written in Python, contains the ETL logic. This function is triggered daily by a Google Cloud Scheduler cron job, ensuring the satellite data is always up-to-date.
 
 The front-end of the application is a web-based dashboard built with Dash and Plotly, which provides interactive visualizations of the satellite orbits. The entire application is deployed on Google App Engine, making it accessible to a public audience.
-
-[Repository](https://github.com/0ladayo/Low-Earth-Orbit-Satellites-Project)
-[Medium Post](https://medium.com/codex/building-a-web-application-for-active-low-earth-orbit-satellites-74fcafb16df)
-[Dashboard](https://leo-satellite-overview-project.nw.r.appspot.com/)
-
-Tools:
-<i class="fab fa-python"></i> Python,
-<i class="fas fa-cloud"></i> GCP.

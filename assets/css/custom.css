@@ -25,14 +25,13 @@
   border: 1px solid #ddd;
   padding: 20px;
   border-radius: 8px;
-  text-decoration: none;
-  color: inherit;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* Added from 'main' for the hover effect */
   transition: transform 0.2s;
 }
 
+/* Added from 'main' for the hover effect */
 .project-card:hover {
   transform: translateY(-5px);
 }
@@ -41,8 +40,46 @@
   margin-top: 0;
 }
 
+.project-content {
+  font-size: 0.9em; /* Reduced font size */
+  margin-bottom: 20px;
+}
+
+.project-tools h4 {
+  margin-bottom: 10px;
+}
+
+.project-tools ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-tools li {
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+
+.project-links {
+  margin-top: auto; /* Pushes links to the bottom */
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
 .arrow-link {
-  align-self: flex-end;
-  font-size: 24px;
-  line-height: 1;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.arrow-link:hover {
+  text-decoration: underline;
 }
