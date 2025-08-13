@@ -27,6 +27,13 @@
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+  /* Added from 'main' for the hover effect */
+  transition: transform 0.2s;
+}
+
+/* Added from 'main' for the hover effect */
+.project-card:hover {
+  transform: translateY(-5px);
 }
 
 .project-card h3 {
