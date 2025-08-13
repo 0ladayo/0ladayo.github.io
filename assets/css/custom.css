@@ -16,7 +16,7 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: 1fr; /* Single column layout */
   gap: 20px;
   margin-top: 20px;
 }
@@ -27,13 +27,6 @@
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  /* Added from 'main' for the hover effect */
-  transition: transform 0.2s;
-}
-
-/* Added from 'main' for the hover effect */
-.project-card:hover {
-  transform: translateY(-5px);
 }
 
 .project-card h3 {
