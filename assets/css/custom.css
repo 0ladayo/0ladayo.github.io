@@ -34,7 +34,7 @@
 }
 
 .project-content {
-  font-size: 0.7em; /* Match intro text */
+  font-size: 0.7em; 
   margin-bottom: 20px;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .project-links {
-  margin-top: auto; /* Pushes links to the bottom */
+  margin-top: auto; 
   padding-top: 20px;
   display: flex;
   flex-direction: column;
@@ -69,7 +69,7 @@
 
 .arrow-link {
   text-decoration: none;
-  color: #5299A4; /* Muted Teal Blue */
+  color: #5299A4;
   font-weight: bold;
 }
 
