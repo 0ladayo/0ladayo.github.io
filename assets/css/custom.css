@@ -34,8 +34,8 @@
 }
 
 .project-content {
-  font-size: 0.7em; /* Match intro text */
-  margin-bottom: 10px; /* Reduced spacing */
+  font-size: 0.7em; 
+  margin-bottom: 10px;
 }
 
 .project-tools {
@@ -45,7 +45,7 @@
 }
 
 .project-tools h4 {
-  margin: 0; /* Remove margin */
+  margin: 0; 
 }
 
 .project-tools ul {
@@ -65,17 +65,20 @@
 }
 
 .project-links {
-  margin-top: auto; /* Pushes links to the bottom */
+  margin-top: auto; 
   padding-top: 20px;
   display: flex;
-  flex-direction: row; /* Links on same line */
+  flex-direction: row;
   align-items: center;
-  gap: 20px; /* Increased gap for horizontal links */
+  gap: 20px; 
 }
 
 .arrow-link {
   text-decoration: none;
-  color: #5299A4; /* Muted Teal Blue */
+
+  color: #5299A4; 
+  font-weight: bold;
+
 }
 
 .arrow-link:hover {
