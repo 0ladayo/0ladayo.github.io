@@ -34,8 +34,8 @@
 }
 
 .project-content {
-  font-size: 0.7em; 
-  margin-bottom: 10px;
+  font-size: 0.7em; /* Match intro text */
+  margin-bottom: 10px; /* Reduced spacing */
 }
 
 .project-tools {
@@ -45,7 +45,8 @@
 }
 
 .project-tools h4 {
-  margin: 0; 
+  margin: 0; /* Remove margin */
+  font-size: 0.9em; /* Reduced font size */
 }
 
 .project-tools ul {
@@ -65,20 +66,19 @@
 }
 
 .project-links {
-  margin-top: auto; 
+  margin-top: auto; /* Pushes links to the bottom */
   padding-top: 20px;
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* Links on same line */
   align-items: center;
-  gap: 20px; 
+  gap: 20px; /* Increased gap for horizontal links */
 }
 
 .arrow-link {
   text-decoration: none;
-
-  color: #5299A4; 
-  font-weight: bold;
-
+  color: #5299A4; /* Muted Teal Blue */
+  font-weight: normal; /* Ensure not bold */
+  font-size: 0.9em; /* Reduced font size */
 }
 
 .arrow-link:hover {
