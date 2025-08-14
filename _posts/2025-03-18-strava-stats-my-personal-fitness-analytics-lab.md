@@ -13,7 +13,11 @@ tools:
     icon: "fas fa-cogs"
 links:
   - title: "Repository"
-    url: "https://github.com/0ladayo/Strava-Data-Pipeline-Project"
+    url: "https://github.com/0ladayo/strava-data-pipeline"
+  - title: "Dashboard"
+    url: "https://lookerstudio.google.com/reporting/c95fa90e-cf5d-4b45-a62d-15fa05ed5dab"
+  - title: "Observability"
+    url: "https://oladayosiyanbola.grafana.net/public-dashboards/f39bb0d5c6b142f2a0c4c3e36c2f7149"
 ---
 
-This project is currently in progress. It aims to build a data pipeline to process and analyze personal fitness data from Strava. The goal is to extract activity data, transform it, and load it into a data warehouse for analysis and visualization. The project will leverage Python and Google Cloud Platform.
+This project is a event-driven ELT data pipeline that extracts data from the Strava API, loads it into Google BigQuery, and then transforms it using dbt. The entire infrastructure is deployed on Google Cloud Platform (GCP) and managed with Terraform.
