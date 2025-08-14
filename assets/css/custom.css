@@ -34,7 +34,7 @@
 }
 
 .project-content {
-  font-size: 0.9em; /* Reduced font size */
+  font-size: 0.7em; 
   margin-bottom: 20px;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .project-links {
-  margin-top: auto; /* Pushes links to the bottom */
+  margin-top: auto; 
   padding-top: 20px;
   display: flex;
   flex-direction: column;
@@ -69,10 +69,14 @@
 
 .arrow-link {
   text-decoration: none;
-  color: #007bff;
+  color: #5299A4;
   font-weight: bold;
 }
 
 .arrow-link:hover {
   text-decoration: underline;
+}
+
+.masthead__title {
+  font-weight: bold;
 }
