@@ -7,6 +7,10 @@ tools:
     icon: "fab fa-python"
   - name: "GCP"
     icon: "fas fa-cloud"
+  - name: "Terraform"
+    icon: "fas fa-cogs"
+  - name: "dbt"
+    icon: "fas fa-cogs"
 links:
   - title: "Repository"
     url: "https://github.com/0ladayo/Strava-Data-Pipeline-Project"
