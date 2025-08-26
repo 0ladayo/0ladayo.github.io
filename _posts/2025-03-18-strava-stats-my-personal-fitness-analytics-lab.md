@@ -15,7 +15,7 @@ links:
   - title: "Repository"
     url: "https://github.com/0ladayo/strava-data-pipeline"
   - title: "Dashboard"
-    url: "https://lookerstudio.google.com/reporting/c95fa90e-cf5d-4b45-a62d-15fa05ed5dab"
+    url: "http://34.14.45.37:3000/dashboard/33-my-strava-dashboard?activity=Run&granularity=Monthly"
   - title: "Observability"
     url: "https://oladayosiyanbola.grafana.net/public-dashboards/f39bb0d5c6b142f2a0c4c3e36c2f7149"
 ---
