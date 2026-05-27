@@ -3,7 +3,7 @@ layout: home
 author_profile: true
 ---
 <div class="intro-text">
- Welcome to my portfolio! I am Oladayo, a data engineer passionate about building and maintaining data pipelines. I recently graduated from the University of Nottingham with a Master's degree. <br> <br> As I navigate the current job market, I am dedicated to continuously developing my skills in areas like Python, SQL, and cloud technologies through projects and sharing my learnings here. Explore my projects below to see my work.
+ Welcome! I am Oladayo, a Data Engineer focused on architecting efficient data pipelines and clean data models. I specialize in Python, SQL, and cloud infrastructure, ensuring data is accurate, accessible, and ready for analytics. Whether I am building end-to-end data pipelines or instructing college students in foundational computer science, I care deeply about writing clean code and building solid architecture. <br> <br> I am currently looking for my next engineering role within a corporate or academic institution. Take a look at my featured projects below
 </div>
 
 <h2>Projects</h2>
