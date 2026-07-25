@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Data Ingestion Project"
-category: data-engineering
+title: "Data Ingestion Pipeline (Full, Incremental & CDC)"
+category: data-pipeline-engineering
 tools:
   - name: "Python"
     icon: "fab fa-python"
@@ -9,13 +9,17 @@ tools:
     icon: "fas fa-database"
   - name: "Docker"
     icon: "fab fa-docker"
-  - name: "GCP"
+  - name: "GCP BigQuery"
     icon: "fas fa-cloud"
 links:
-  - title: "Repository"
+  - title: "GitHub Repository"
     url: "https://github.com/0ladayo/data-ingestion"
-  - title: "Medium Post"
+  - title: "Technical Write-up"
     url: "https://medium.com/codex/data-ingestion-full-data-ingestion-78f0dad296e9"
 ---
 
-This project implements three data ingestion techniques for moving data from a MySQL database to a BigQuery data warehouse: Full Load, Incremental Load, and Change Data Capture (CDC).
+Architected and implemented three data ingestion strategies for moving data from a MySQL OLTP database to a GCP BigQuery data warehouse.
+
+**Key Highlights:**
+- **Ingestion Strategies**: Implemented Full Load, Timestamp-based Incremental Load, and Change Data Capture (CDC).
+- **Reliability & Idempotency**: Built error-handling logic ensuring data integrity across pipeline executions.

@@ -3,32 +3,65 @@ layout: home
 author_profile: true
 ---
 <div class="intro-text">
- Welcome! I am Oladayo, a Data Engineer focused on architecting efficient data pipelines and clean data models. I specialize in Python, SQL, and cloud infrastructure, ensuring data is accurate, accessible, and ready for analytics. Whether I am building end-to-end data pipelines or instructing college students in foundational computer science, I care deeply about writing clean code and building solid architecture. <br> <br> I am currently looking for my next engineering role within a corporate or academic institution. Take a look at my featured projects below
+  I am Oladayo, a Data Engineer specializing in <strong>data pipeline engineering</strong> and <strong>analytical data modeling</strong> (relational 3NF & Kimball star schemas). I build maintainable, cloud-native data architectures using Python, SQL, dbt, Terraform, Docker, and GCP to deliver reliable, analytics-ready datasets. I also instruct university-bound students in computer science fundamentals.
 </div>
 
-<h2>Projects</h2>
-<div class="projects-grid">
-  {% for post in site.posts %}
-    <div class="project-card">
-      <h3>{{ post.title }}</h3>
-      <div class="project-content">
-        {{ post.content }}
-      </div>
-      <div class="project-tools">
-        <h4>Tools Used:</h4>
-        <ul>
-          {% for tool in post.tools %}
-            <li><i class="{{ tool.icon }}"></i> {{ tool.name }}</li>
+<div class="category-block" id="data-pipeline-engineering">
+  <h2 class="category-heading"><i class="fas fa-network-wired"></i> Data Pipeline Engineering</h2>
+  <div class="projects-grid">
+    {% assign pipeline_posts = site.posts | where: "category", "data-pipeline-engineering" %}
+    {% for post in pipeline_posts %}
+      <div class="project-card">
+        <h3>{{ post.title }}</h3>
+        <div class="project-content">
+          {{ post.content }}
+        </div>
+        <div class="project-tools">
+          <h4>Tools Used:</h4>
+          <ul>
+            {% for tool in post.tools %}
+              <li><i class="{{ tool.icon }}"></i> {{ tool.name }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="project-links">
+          {% for link in post.links %}
+            <a href="{{ link.url }}" class="arrow-link" target="_blank" rel="noopener noreferrer">
+              {{ link.title }} &#8594;
+            </a>
           {% endfor %}
-        </ul>
+        </div>
       </div>
-      <div class="project-links">
-        {% for link in post.links %}
-          <a href="{{ link.url }}" class="arrow-link" target="_blank" rel="noopener noreferrer">
-            {{ link.title }} &#8594;
-          </a>
-        {% endfor %}
+    {% endfor %}
+  </div>
+</div>
+
+<div class="category-block" id="analytical-pipeline-engineering">
+  <h2 class="category-heading"><i class="fas fa-cubes"></i> Analytical Pipeline Engineering (Data Modelling)</h2>
+  <div class="projects-grid">
+    {% assign modelling_posts = site.posts | where: "category", "analytical-pipeline-engineering" %}
+    {% for post in modelling_posts %}
+      <div class="project-card">
+        <h3>{{ post.title }}</h3>
+        <div class="project-content">
+          {{ post.content }}
+        </div>
+        <div class="project-tools">
+          <h4>Tools Used:</h4>
+          <ul>
+            {% for tool in post.tools %}
+              <li><i class="{{ tool.icon }}"></i> {{ tool.name }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="project-links">
+          {% for link in post.links %}
+            <a href="{{ link.url }}" class="arrow-link" target="_blank" rel="noopener noreferrer">
+              {{ link.title }} &#8594;
+            </a>
+          {% endfor %}
+        </div>
       </div>
-    </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 </div>
