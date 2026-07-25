@@ -22,4 +22,3 @@ Architected and implemented three data ingestion strategies for moving data from
 
 **Key Highlights:**
 - **Ingestion Strategies**: Implemented Full Load, Timestamp-based Incremental Load, and Change Data Capture (CDC).
-- **Reliability & Idempotency**: Built error-handling logic ensuring data integrity across pipeline executions.
