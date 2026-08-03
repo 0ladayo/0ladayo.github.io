@@ -10,6 +10,8 @@ tools:
   - name: "GCP BigQuery"
     icon: "fas fa-cloud"
 links:
+  - title: "GitHub Repository"
+    url: "https://github.com/0ladayo/data-modeling-case-studies/tree/main/end-to-end%20modelling%3B%20oil%20and%20gas%20case%20study"
   - title: "Part 1: Relational Modeling (3NF)"
     url: "https://medium.com/data-engineer-things/from-flat-files-to-relational-models-architecting-oil-gas-production-data-8c9c1e684408"
   - title: "Part 2: Dimensional Modeling (Star Schema)"

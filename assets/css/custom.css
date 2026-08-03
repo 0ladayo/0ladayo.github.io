@@ -9,6 +9,10 @@ html {
   color: #2d3748;
   margin: 15px 0 35px 0;
   max-width: 800px;
+  background: #f8fafc;
+  border-left: 4px solid #3182ce;
+  padding: 16px 20px;
+  border-radius: 0 8px 8px 0;
 }
 
 .archive {
@@ -29,11 +33,15 @@ html {
   font-weight: 700;
   color: #1a202c;
   border-bottom: 2px solid #e2e8f0;
-  padding-bottom: 8px;
-  margin-bottom: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 24px;
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.category-heading i {
+  color: #3182ce;
 }
 
 .projects-grid {
@@ -46,15 +54,17 @@ html {
   border: 1px solid #e2e8f0;
   background-color: #ffffff;
   padding: 24px;
-  border-radius: 8px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .project-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+  border-color: #cbd5e0;
 }
 
 .project-card h3 {
@@ -62,6 +72,7 @@ html {
   margin-bottom: 12px;
   font-size: 1.15rem;
   color: #1a202c;
+  font-weight: 600;
 }
 
 .project-content {
@@ -89,13 +100,14 @@ html {
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .project-tools h4 {
   margin: 0;
   font-size: 0.85rem;
   color: #718096;
+  font-weight: 600;
 }
 
 .project-tools ul {
@@ -108,23 +120,50 @@ html {
 }
 
 .project-tools li {
-  background-color: #f7fafc;
-  border: 1px solid #edf2f7;
+  background-color: #edf2f7;
+  border: 1px solid #e2e8f0;
   color: #2d3748;
   padding: 4px 10px;
   border-radius: 6px;
   font-size: 0.8rem;
   font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .project-links {
   margin-top: auto;
   padding-top: 16px;
-  border-top: 1px solid #f7fafc;
+  border-top: 1px solid #f1f5f9;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 20px;
+  gap: 12px;
+}
+
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background-color: #f8fafc;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  color: #2b6cb0;
+  font-weight: 500;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.project-btn:hover,
+.project-btn:focus {
+  background-color: #ebf8ff;
+  border-color: #3182ce;
+  color: #2c5282;
+  text-decoration: none;
+  transform: translateY(-1px);
 }
 
 .arrow-link,

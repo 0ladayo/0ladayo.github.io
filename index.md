@@ -3,7 +3,7 @@ layout: home
 author_profile: true
 ---
 <div class="intro-text">
-  I am Oladayo, a Data Engineer specializing in <strong>data pipeline engineering</strong> and <strong>analytical data modeling</strong> (relational 3NF & Kimball star schemas). I build maintainable, cloud-native data architectures using Python, SQL, dbt, Terraform, Docker, and GCP to deliver reliable, analytics-ready datasets. I also instruct university-bound students in computer science fundamentals.
+  I am Oladayo, a Data Engineer specializing in <strong>data pipeline engineering</strong> and <strong>analytical data modeling</strong> (relational 3NF &amp; Kimball star schemas). I build maintainable, cloud-native data architectures using Python, SQL, dbt, Terraform, Docker, and GCP to deliver reliable, analytics-ready datasets. I also instruct university-bound students in computer science fundamentals.
 </div>
 
 <div class="category-block" id="data-pipeline-engineering">
@@ -26,8 +26,15 @@ author_profile: true
         </div>
         <div class="project-links">
           {% for link in post.links %}
-            <a href="{{ link.url }}" class="arrow-link" target="_blank" rel="noopener noreferrer">
-              {{ link.title }} &#8594;
+            <a href="{{ link.url }}" class="project-btn" target="_blank" rel="noopener noreferrer">
+              {% if link.title contains 'GitHub' %}
+                <i class="fab fa-github"></i>
+              {% elsif link.title contains 'Medium' or link.title contains 'Part' or link.title contains 'Write-up' %}
+                <i class="fab fa-medium"></i>
+              {% else %}
+                <i class="fas fa-external-link-alt"></i>
+              {% endif %}
+              <span>{{ link.title }}</span>
             </a>
           {% endfor %}
         </div>
@@ -56,8 +63,15 @@ author_profile: true
         </div>
         <div class="project-links">
           {% for link in post.links %}
-            <a href="{{ link.url }}" class="arrow-link" target="_blank" rel="noopener noreferrer">
-              {{ link.title }} &#8594;
+            <a href="{{ link.url }}" class="project-btn" target="_blank" rel="noopener noreferrer">
+              {% if link.title contains 'GitHub' %}
+                <i class="fab fa-github"></i>
+              {% elsif link.title contains 'Medium' or link.title contains 'Part' or link.title contains 'Write-up' %}
+                <i class="fab fa-medium"></i>
+              {% else %}
+                <i class="fas fa-external-link-alt"></i>
+              {% endif %}
+              <span>{{ link.title }}</span>
             </a>
           {% endfor %}
         </div>
