@@ -18,9 +18,9 @@ links:
     url: "https://medium.com/@Oladayo/from-relational-models-to-dimension-models-architecting-oil-gas-production-data-26a9c780e686/"
 ---
 
-Designed a normalized 3NF operational database schema and transformed it into a Kimball dimensional star schema for oil & gas production analytics.
+Designed a normalized 3NF operational database schema and transformed it into a Kimball dimensional star schema on BigQuery using dbt.
 
 **Key Highlights:**
-- **Relational Architecture**: Designed a 3rd Normal Form (3NF) schema for operational data tracking.
-- **Dimensional Modeling**: Architected a Kimball star schema with fact and dimension tables optimized for analytical queries.
-- **Transformation Pipeline**: Implemented SQL transformations and dbt models.
+- **3NF Relational Schema Design**: Architected a normalized PostgreSQL schema (fields, reservoirs, wells, and daily volume metrics) to enforce data constraints and track operational hierarchy.
+- **SCD Type 2 History Tracking**: Implemented dbt snapshots to track status updates over time (drilling → producing → shut-in) without overwriting historical data.
+- **Point-in-Time Star Schema**: Built `dim_wells` and `fct_production` using point-in-time joins so daily production metrics accurately match the well's status on that specific date.
